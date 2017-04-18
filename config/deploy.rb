@@ -1,6 +1,3 @@
-# Change these
-server '34.208.48.187', port: 22, roles: [:web, :app, :db], primary: true
-
 set :scm,             :git
 set :repo_url,        'git@github.com:softcomet/prelauncher-aws.git'
 set :application,     'prelauncher'
