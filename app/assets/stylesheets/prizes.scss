@@ -1,0 +1,154 @@
+#prizes {
+    border-top: 5px solid #BCBCBC;
+    position: relative;
+	margin: 100px 70px;
+	color: #333;
+}
+
+.progressbar {
+    height: 5px;
+    top: -5px;
+    position: absolute;
+    left: 0px;
+    width: 0px;
+    z-index: 100;
+    background: #2ECC71;
+}
+
+.progress-box {
+    height: 10px;
+    width: 10px;
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: -2.5px;
+    border-radius: 50%;
+    background: #2ECC71;
+}
+
+#prizes .prize-number > span{
+  display: none;
+}
+
+#prizes .prize {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-top: 15px;
+}
+
+#prizes .prize-number {
+    color: inherit;
+    border-radius: 50%;
+    position: absolute;
+    top: -60px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    left: calc(50% - 15px);
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#prizes .prize-name {
+    text-align: center;
+    color: inherit;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+
+#prizes .active-prize .prize-name{
+    color: #2ecc71;
+}
+
+#prizes .active-prize .prize-number{
+    background: #2ecc71;
+    color: white;
+}
+
+
+#prizes img{
+    border: 3px solid #E9E9E9;
+    top: -330px;
+    position: absolute;
+    display: none;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#prizes .prize:hover img, #prizes .prize:focus img, #prizes .prize:active img{
+    display: block;
+}
+
+#footer {
+    width: 100%;
+    bottom: 0px;
+    margin-top: 60px;
+	margin-bottom: 20px;
+	height: auto;
+	text-align: center;
+    display: inline-block;
+}
+
+#footer p{
+    font-size: 14px;
+    color: #333;
+    font-weight: 400;
+    width: auto;
+    text-transform: none;
+}
+
+#footer a{
+    font-size: 12px;
+    color: #333;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 767px){
+    #prizes .prize-number {
+        width: 90px;
+        height: 40px;
+        line-height: 40px;
+        left: calc(50% - 45px);
+        top: -55px !important;
+        font-size: 14px;
+        background: #2ECC71;
+        color: #FFF;
+    }
+
+
+    #prizes .prize-number > span{
+        display: inline;
+    }
+
+    #prizes img{
+      display: block;
+      position: static;
+    }
+
+    #prizes .prize:first-child{
+        margin-left: 0;
+    }
+
+
+
+    #prizes{
+      margin-bottom: 0;
+    }
+
+    #prizes .prize{
+      width: 100%;
+      margin-top: 90px;
+    }
+
+    #prizes {
+        margin: 50px 20px;
+      width: calc(100% - 40px);
+    }
+
+
+}
